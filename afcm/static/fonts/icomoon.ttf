@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Error>
-  <Code>NoSuchKey</Code>
-  <Message>The specified key does not exist.</Message>
-  <RequestId>5DE08AC9863BEA30357CA985</RequestId>
-  <HostId>makapicture.oss-cn-beijing.aliyuncs.com</HostId>
-  <Key>cdn/maka/release/fonts/icomoon.ttf</Key>
-</Error>
