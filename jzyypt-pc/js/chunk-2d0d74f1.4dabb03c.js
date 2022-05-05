@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d74f1"],{"75eb":function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticStyle:{padding:"30px"}},[t("router-view")],1)},c=[],u={name:"BackstageManage"},i=u,l=t("2877"),r=Object(l["a"])(i,a,c,!1,null,null,null);n["default"]=r.exports}}]);

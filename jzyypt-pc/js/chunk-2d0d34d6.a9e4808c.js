@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d34d6"],{"5bd7":function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{staticStyle:{padding:"30px"}},[t("router-view")],1)},i=[],c={name:"DictionaryManage"},r=c,u=t("2877"),d=Object(u["a"])(r,a,i,!1,null,null,null);e["default"]=d.exports}}]);
