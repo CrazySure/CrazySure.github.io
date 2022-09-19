@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>河北极速网络科技有限公司</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<!--[if IE 6]>
+<script type="text/javascript" src="png.js" ></script>
+<script type="text/javascript">
+  DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+
+</head>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/******************导航部分**********/
+		
+		$(window).scroll(function(e) {
+			var myHead = $('.header').height()
+            if($(window).scrollTop()> myHead ){
+				$('.header').addClass('poFix');
+				$('.header').css({'background':'rgba(0,153,255,1)'});	
+			}else{
+				$('.header').removeClass('poFix');	
+				$('.header').css({'background':'rgba(0,153,255,0)'});
+			}
+        });
+		//鼠标划过nav a 白色线条跟随移动
+		$('.nav ul li a').hover(function(e) {
+			var lineMove = $(this).parent().index()*94;
+			//'+lineMove+'
+			
+            $(this).closest('.nav').find('.line').stop().animate({'left':lineMove + 'px'},200);
+			lineMove = $(this).parent().index();
+        },function(){
+			$(this).closest('.nav').find('.line').stop().animate({'left':'0px'},200);	
+		});
+		/***************banner****************/
+		$('.banner ul li').eq(0).show();
+		$('.banner .toggle li').click(function(e) {
+            $(this).addClass('current').siblings().removeClass('current');
+			$('.banner ul li').eq($(this).index()).stop().fadeIn(500).siblings().stop().fadeOut(500);
+        });
+		
+		/***************我们的案例部分****************/
+		$('.cases_bd ul li').hover(function(e) {
+            $(this).find('span').stop().fadeIn(500);
+        },function(){
+			$(this).find('span').stop().fadeOut(500);	
+		});
+		
+		/****************服务项目******************/
+		$('.serviceIn .ul01 ul').eq(0).find('li').hover(function(e) {
+            $(this).find('span').css('background-position','-14px -402px');
+        },function(){
+			$(this).find('span').css('background-position','-14px -278px');	
+		});
+		$('.serviceIn .ul01 ul').eq(1).find('li').hover(function(e) {
+            $(this).find('span').css('background-position','-139px -402px');
+        },function(){
+			$(this).find('span').css('background-position','-139px -278px');	
+		});
+		$('.serviceIn .ul01 ul').eq(2).find('li').hover(function(e) {
+            $(this).find('span').css('background-position','-263px -402px');
+        },function(){
+			$(this).find('span').css('background-position','-263px -278px');	
+		});
+		$('.serviceIn .ul01 ul').eq(3).find('li').hover(function(e) {
+            $(this).find('span').css('background-position','-387px -402px');
+        },function(){
+			$(this).find('span').css('background-position','-387px -278px');	
+		});
+		
+		
+		//我们的优势部分
+		$('.tage_bd ul li span').hover(function(e) {
+            $(this).css('backgroundColor','#219FFF');
+        },function(){
+			$(this).css('backgroundColor','#ccc');	
+		});
+	})
+</script>
+
+
+<body>
+<!--头部开始-->
+<div class="header">
+	<div class="headerIn wrap">
+    	<div class="logo fl">
+        	<h1><a href="#" title="河北极速网络"><img src="img/logo.png" width="108" height="60" />河北极速网络</a></h1>
+        </div>
+        <div class="nav">
+            <ul class="navUl fl">
+                <li><a href="index.html">网站首页</a></li> 
+                <li><a href="javascript:;">关于极速</a></li>
+                <li><a href="javascript:;">网站建设</a></li>
+                <li><a href="javascript:;">APP开发</a></li>
+                <li><a href="javascript:;">微信开发</a></li>
+                <li><a href="javascript:;">案例中心</a></li>
+                <li><a href="list.html">新闻中心</a></li>
+                <li><a href="javascript:;">联系我们</a></li>      
+            </ul>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<!--banner开始-->
+<!-- <div class="banner ">
+	<div class="banner_l fl">
+    	<a href="javascript"><img src="img/banner01.png" width="550" height="519" /></a>
+    </div>
+  	<div class="banner_r fl">
+        <h2>专为APP开发而生的品牌</h2>
+        <p class="p01">
+            <span> APP开发 </span> <span> APP移动应用开发 </span> <span> iPhone应用开发 </span> <span> Android应用开发 </span>
+        </p>
+        <p class="p02">河北苹果app开发公司极速网络公司拥有专业的IOS app策划团队，为顾客提供专业APP界面策划，内容策划；专注苹果手机APP策划、更懂APP、帮客户想得更多、更仔细!</p>
+        <a href="javascript">查看详情</a>
+  	</div>
+    <div class="toggle">
+    	<a href="javascript"></a>
+        <a href="javascript"></a>
+        <a href="javascript"></a>
+    </div>
+</div> -->
+<div class="banner">
+	<ul>
+    	<li class="li01">
+        	<div class="banner_l fl">
+                <a href="javascript:;"><img src="img/banner01.png" width="550" height="519" /></a>
+            </div>
+            <div class="banner_r fl">
+                <h2>专为APP开发而生的品牌</h2>
+                <p class="p01">
+                    <span> APP开发 </span> <span> APP移动应用开发 </span> <span> iPhone应用开发 </span> <span> Android应用开发 </span>
+                </p>
+                <p class="p02">河北苹果app开发公司极速网络公司拥有专业的IOS app策划团队，为顾客提供专业APP界面策划，内容策划；专注苹果手机APP策划、更懂APP、帮客户想得更多、更仔细!</p>
+                <a href="javascript">查看详情</a>
+            </div>
+	    </li>
+        <li  class="li02">
+        	<div class="banner_l fl">
+                <a href="javascript:;"><img src="img/banner02.png" width="550" height="519" /></a>
+            </div>
+            <div class="banner_r fl">
+                <h2>专为APP开发而生的品牌</h2>
+                <p class="p01">
+                    <span> APP开发 </span> <span> APP移动应用开发 </span> <span> iPhone应用开发 </span> <span> Android应用开发 </span>
+                </p>
+                <p class="p02">河北苹果app开发公司极速网络公司拥有专业的IOS app策划团队，为顾客提供专业APP界面策划，内容策划；专注苹果手机APP策划、更懂APP、帮客户想得更多、更仔细!</p>
+                <a href="javascript">查看详情</a>
+            </div>
+	    </li>
+        <li  class="li03">
+        	<div class="banner_l fl">
+                <a href="javascript:;"><img src="img/banner03.png" width="550" height="519" /></a>
+            </div>
+            <div class="banner_r fl">
+                <h2>专为APP开发而生的品牌</h2>
+                <p class="p01">
+                    <span> APP开发 </span> <span> APP移动应用开发 </span> <span> iPhone应用开发 </span> <span> Android应用开发 </span>
+                </p>
+                <p class="p02">河北苹果app开发公司极速网络公司拥有专业的IOS app策划团队，为顾客提供专业APP界面策划，内容策划；专注苹果手机APP策划、更懂APP、帮客户想得更多、更仔细!</p>
+                <a href="javascript">查看详情</a>
+            </div>
+	    </li>
+    </ul>
+    <ol class="toggle">
+    	<li class="current"></li>
+    	<li></li>
+    	<li></li>
+    </ol>
+</div>
+<!--banner结束-->
+
+<!--我们的服务开始-->
+<div class="service ">
+    	<h2>服务项目<span>SERVICES</span></h2>
+        <h3>资深技术专家、优秀运营管理、完善服务体系</h3>
+</div>
+<div class="serviceIn wrap">
+	<ul class="ul01">
+    	<li>
+        	<a href="javascript:;">
+            	<ul class="ul02">
+                	<li class="icon one"><span ></span></li>
+                    <li><h2>pc端网站设计</h2></li>
+                    <li class="design"><p>WEBSITE DESIGN</p></li>
+                    <li class="public"><i></i><span>高端网站定制</span></li>
+                    <li class="public"><i></i><span>电子商务网站定制</span></li>
+                    <li class="public"><i></i><span>企业品牌网站建设</span></li>
+                </ul>
+                <ul class="ul02">
+                	<li class="icon two"><span ></span></li>
+                    <li><h2>移动端应用开发</h2></li>
+                    <li class="design"><p>APP  DEVELOPMENT</p></li>
+                    <li class="public"><i></i><span>APP开发</span></li>
+                    <li class="public"><i></i><span>iphone应用开发</span></li>
+                    <li class="public"><i></i><span>andriod应用开发</span></li>
+                </ul>
+                <ul class="ul02">
+                	<li class="icon three"><span ></span></li>
+                    <li><h2>微信开发营销</h2></li>
+                    <li class="design"><p>WEBSITE  DESIGN</p></li>
+                    <li class="public"><i></i><span>微官网建设</span></li>
+                    <li class="public"><i></i><span>微商城开发</span></li>
+                    <li class="public"><i></i><span>微行业开发定制</span></li>
+                </ul>
+                <ul class="ul02">
+                	<li class="icon four"><span ></span></li>
+                    <li><h2> 网 络 营 销</h2></li>
+                    <li class="design"><p>MARKETING</p></li>
+                    <li class="public"><i></i><span>社会化营销</span></li>
+                    <li class="public"><i></i><span>品牌策划运营</span></li>
+                    <li class="public"><i></i><span>SEO搜索引擎优化</span></li>
+                </ul>
+      		</a>
+        </li>
+    </ul>
+</div>
+<!--我们的服务结束-->
+<!--关于我们开始-->
+<div class="about">
+	<div class="about_hd">
+    	<h2>关于我们 ABOUT US</h2>
+        <p class="f16">网站建设、网页设计、网站制作、app开发、微信站开发综合于一体的互联网公司</p>
+    </div>
+	<div class="about_bd wrap">
+    	<div class="pic fl">
+       		<img src="img/aboutpic.jpg" width="380" height="276" /> 
+        </div>
+  		<div class="txt fl">
+        	<h2 class="f22">河北极速网络科技有限公司</h2>
+        	<h3 class="f18"><span></span>中国电子商务认证中心河北服务中心</h3>
+        	<p>河北极速网络是集各类<b>网站建设 、</b><b>网页设计 、</b><b>网站制作 、</b><b>app开发 、</b><b>微信开发 </b>综合于一体的互联网公司。因 <span class="icon01">认真的服务态度 </span> <span class="icon02">专业的服务技能 </span> <span class="icon03">贴心的服务指导受到 </span> <b> 国家商务部、</b><b>工业和信息化部</b>以及<b>国资委</b>等国家相关部门的认可，并成为中国电子商务认证中心（E-commerce Certification Center of China）河北省唯一的服务中心。
+            </p>
+        	<a href="javascript:;">查看详情</a>
+        </div>
+    </div>
+</div>
+<!--关于我们结束-->
+<!--案例开始-->
+<div class="cases">
+	<div class="cases_hd">
+    	<h2>案例 CASES</h2>
+        <p class="f16">极速出品，必属精品！</p>
+    </div>
+	<div class="cases_bd ">
+    	<ul>
+    		<li>
+                <a href="javascript:;">
+                	<span></span>
+                    <img src="img/cases01.png" width="255" height="165" />
+                </a>
+                <p>永昌集团</p>
+            </li>
+    		<li>
+                <a href="javascript:;">
+                    <span></span>
+                    <img src="img/cases02.png" width="255" height="165" />
+                </a>
+                <p>空中花园</p>
+            </li>
+    		<li>
+                <a href="javascript:;">
+                    <span></span>
+                    <img src="img/cases03.png" width="255" height="165" />
+                </a>
+                <p>河北省建筑科学研究院</p>
+            </li>
+    		<li>
+                <a href="javascript:;">
+                    <span></span>
+                    <img src="img/cases04.png" width="255" height="165" />
+                </a>
+                <p>河北婚庆服务平台</p>
+            </li>
+    		<li>
+                <a href="javascript:;">
+                    <span></span>
+                    <img src="img/cases05.png" width="255" height="165" />
+                </a>
+                <p>石家庄永昌足球俱乐部</p>
+            </li>
+    		<li>
+                <a href="javascript:;">
+                    <span></span>
+                    <img src="img/cases06.png" width="255" height="165" />
+                </a>
+                <p>河北农业平台</p>
+            </li>
+    		<li>
+                <a href="javascript:;">
+                    <span></span>
+                    <img src="img/cases07.png" width="255" height="165" />
+                </a>
+                <p>包头市片儿哥食品有限公司</p>
+            </li>
+    		<li>
+                <a href="javascript:;">
+                    <span></span>
+                    <img src="img/cases08.jpg" width="255" height="165" />
+                </a>
+                <p>河北燕赵众诚律师事务所</p>
+            </li>
+            <span><a href="javascript:;" class="toggle01"></a></span>
+            <span><a href="javascript:;" class="toggle02"></a></span>
+    	</ul>
+        
+    </div>
+    <a href="javascript:;" class="more"></a>
+</div>
+<!--案例结束-->
+<!--新闻开始-->
+<div class="news">
+	<div class="news_hd">
+    	<h2>新闻 NEWS</h2>
+        <p class="f16">关注极速，关注互联网！</p>
+    </div>
+	<div class="news_bd wrap">
+    	<ul>
+        	<li class="one"><h3><span></span>网站建设资讯</h3></li>
+        	<li><a href="javascript:;">企业品牌网站建设不可不知的六大要素</a></li>
+        	<li><a href="javascript:;">企业怎么建设精品手机网站</a></li>
+        	<li><a href="javascript:;">浅谈制作触屏版手机网站需要注意的问题</a></li>
+        	<li><a href="javascript:;">传统企业为什么需要开发电商网站</a></li>
+        	<li><a href="javascript:;">可以用哪些工具开发JAVA手机网站</a></li>
+        	<li><a href="javascript:;">企业网站建设更需要相信品牌的力量</a></li>
+        	<li><a href="javascript:;">建设手机网站的具体流程是什么</a></li>
+        	<li><a href="javascript:;">网站建设的好处和优势各有哪些？</a></li>
+        	<li><a href="javascript:;">独立商城网站建设具备什么样的优势</a></li>
+        	<li><a href="javascript:;">从微信用户数据来看企业手机网站建设的必要性</a></li>
+        	<li><a href="javascript:;">浅说线上线下结合的O2O商城网站建设</a></li>
+        	<li><a href="javascript:;">企业的网站建设流程最重要第一步</a></li>
+        	<li><a href="javascript:;">商城型网站建设对企业发展的重要意义</a></li>
+        	<li><a href="javascript:;">企业为什么要在互联网时代进行定制商城网站建设</a></li>
+        	<li><a href="javascript:;">企业为什么需要建设B2C商城网站</a></li>
+        </ul>
+        <ul>
+        	<li class="one"><h3><span class="sp02"></span>APP开发资讯</h3></li>
+        	<li><a href="javascript:;">机器测试将成为移动app制作公司未来测试app的主要方式</a></li>
+        	<li><a href="javascript:;">安卓app开发避免昙花一现 需注重app产品质量</a></li>
+        	<li><a href="javascript:;">如何做好app定制方案，让你的app开发事半功倍</a></li>
+        	<li><a href="javascript:;">狂用社交App推广易遭用户反感</a></li>
+        	<li><a href="javascript:;">App软件开发的关键是做好用户体验</a></li>
+        	<li><a href="javascript:;">5款傻瓜式的移动app开发工具</a></li>
+        	<li><a href="javascript:;">谈谈php在手机app开发中扮演的角色</a></li>
+        	<li><a href="javascript:;">浅析app自助开发</a></li>
+        	<li><a href="javascript:;">未来App开发的方向</a></li>
+        	<li><a href="javascript:;">开发APP最重要的8个细节</a></li>
+        	<li><a href="javascript:;">浅析开发html5 app的三大优势</a></li>
+        	<li><a href="javascript:;">做专业的App应用开发应该要知道的知识</a></li>
+        	<li><a href="javascript:;">手机App客户端开发的知识普及</a></li>
+        	<li><a href="javascript:;">APP知识普及：企业APP都具备哪些功能</a></li>
+        	<li><a href="javascript:;">酒店进行独立手机app开发的必要性</a></li>
+        </ul>
+        <ul>
+        	<li class="one"><h3><span class="sp03"></span>微信资讯</h3></li>
+        	<li><a href="javascript:;">企业通过制作微信手机网站进入微商渠道</a></li>
+        	<li><a href="javascript:;">微信开发对企业发展有何重要</a></li>
+        	<li><a href="javascript:;">APP软件微信公众帐号出台新规：可删单篇文章</a></li>
+        	<li><a href="javascript:;">微信APP定制新服务，让你的证件照也可以“美美哒”</a></li>
+        	<li><a href="javascript:;">微信网站建设 企业重要的移动营销工具</a></li>
+        	<li><a href="javascript:;">微信APP开发品牌维权平台 朋友圈假货哪里逃</a></li>
+        	<li><a href="javascript:;">微信团队再次开发APP新功能清理朋友圈</a></li>
+        	<li><a href="javascript:;">浅谈微信营销的优势</a></li>
+        	<li><a href="javascript:;">放眼未来 必须掌握的十大移动技术</a></li>
+        	<li><a href="javascript:;">微信靠什么连接一切？</a></li>
+        	<li><a href="javascript:;">关于微信打开率的3点思考</a></li>
+        	<li><a href="javascript:;">微信营销的价值</a></li>
+        	<li><a href="javascript:;">微信变WiFi神器 解读腾讯O2O新大招</a></li>
+        	<li><a href="javascript:;">2015微信红包的生态战</a></li>
+        	<li><a href="javascript:;">怎么使用二维码推广你的app</a></li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="more"></a>
+</div>
+<!--新闻结束-->
+<!--我们的优势开始-->
+<div class="tage">
+	<div class="tage_hd">
+    	<h2>我们的优势 ADVANTAGE</h2>
+        <p class="f16">您的选择，我们的动力！</p>
+    </div>
+	<div class="tage_bd wrap">
+    	<ul>
+    		<li>
+            	<span>十年<br/>
+          沉淀</span>
+                <p>十年沉淀只专注一件事全心全意为企业电子商务一体化服务。</p>
+            </li>
+    		<li>
+            	<span>商务部<br/>
+          认证</span>
+                <p>可申请国家商务部认证，认证成功后在官网可查。</p>
+            </li>
+    		<li>
+            	<span>多对一<br/>
+          服务</span>
+                <p>优秀设计师、资深程序师、开发工程师多对一全程服务。</p>
+            </li>
+    		<li>
+            	<span>高端<br/>
+          定制</span>
+                <p>河北极速为您量身定制，您的满意，就是对我们最大的肯定！</p>
+            </li>
+    		<li>
+            	<span>技术<br/>技术</span>
+                <p>掌控最新html5+css3、响应式布局等技术。</p>
+            </li>
+    		<li>
+            	<span>创新<br/>
+          设计</span>
+                <p>创新是您的网站亮点所在；设计是您的网站灵魂所在。</p>
+            </li>
+    		<li>
+            	<span>精品<br/>
+          案例</span>
+                <p>服务河北省众多知名企事业单位，千家企业案例见证我们的实力。</p>
+            </li>
+    	</ul>
+    </div>
+    
+</div>
+<!--我们的优势结束-->
+<!--联系我们开始-->
+<div class="contact">
+	<div class="contact_hd">
+    	<h2>联系我们 CONTACT US</h2>
+        <p class="f16">为了让我们更好的为您服务,您可以直接联系我们！</p>
+    </div>
+	<div class="contact_bd wrap">
+    	<div class="contact_h2">
+        	<h2><span></span>全国24小时服务热线：400-008-2627</h2>
+        </div>
+        <div class="map">
+          <h3>河北极速网络科技有限公司</h3>
+          <p>地址：中山东路289号长安广场写字楼1702  1704  1706室</p>
+          <p>电子邮箱：postmaster@ew.net.cn</p>
+          <p>电话：0311-80961666   18832121706</p>
+          <p>网址：http://www.ew.net.cn</p>
+          <p>乘车线路：10路、12路、1路、36路、28路、68路、130路省博物馆站下车</p>
+        </div>
+    </div>
+    
+</div>
+<!--联系我们结束-->
+<!--底部导航开始-->
+<div class="bot_nav">
+	<div class="bot_con wrap">
+    	<dl>
+    		<dt><a href="javascript:;">网站首页</a></dt>
+    		<dd><a href="javascript:;"></a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">关于极速</a></dt>
+    		<dd><a href="javascript:;">公司简介</a></dd>
+            <dd><a href="javascript:;">企业文化</a></dd>
+            <dd><a href="javascript:;">服务项目</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">案例中心</a></dt>
+    		<dd><a href="javascript:;">精品案例</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">新闻中心</a></dt>
+    		<dd><a href="javascript:;">行业新闻</a></dd>
+            <dd><a href="javascript:;">建站新闻</a></dd>
+            <dd><a href="javascript:;">app新闻</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">服务与理念</a></dt>
+    		<dd><a href="javascript:;">服务理念</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">联系我们</a></dt>
+    		<dd><a href="javascript:;">联系我们</a></dd>
+    	</dl>
+    </div>
+</div>
+<!--底部导航结束-->
+
+<!--底部开始-->
+<div class="bot">
+  <div class="copy_t">
+    <p>河北极速网络科技有限公司 版权所有 E-mail:postmaster@ew.net.cn </p>
+    <p>电话:0311-80961666 传真:1 邮编:050000 </p>
+    <p>地址:中山东路289号长安广场写字楼1702  1704  1706室 <a href="http://www.miitbeian.gov.cn/" rel="nofollow">冀ICP备07500484号</a> </p>
+    <p>法律支持：天津优法律师事务所 康顺法律师：02228352158 网站地图</p>
+  </div>
+    <div class="copy_b">本站链接：<a href="http://www.ew.net.cn" target="_blank">河北极速</a><a href="http://www.chinazk.org.cn" target="_blank" title="app开发">app开发</a>
+    </div>
+</div>
+<!--底部结束-->
+</body>
+</html>

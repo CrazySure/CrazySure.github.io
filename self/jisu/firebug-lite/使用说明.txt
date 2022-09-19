@@ -1,0 +1,6 @@
+将firebug-lite放在根目录
+在html文件里面head标签里面插入下面代码
+<!--[if IE 6]>
+<script type="text/javascript" src="firebug-lite/firebug-lite/firebug-lite/build/firebug-lite.js"></script>
+<![endif]-->
+这是让ie6支持firebug

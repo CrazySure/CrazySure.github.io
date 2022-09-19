@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>河北极速网络科技有限公司</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/list.css"/>
+<!--[if IE 6]>
+<script type="text/javascript" src="png.js" ></script>
+<script type="text/javascript">
+  DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</head>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//导航部分
+		$('.header').css({'background':'rgba(0,153,255,1)'});
+		
+		//鼠标划过nav a 白色线条跟随移动
+		$('.nav ul li a').hover(function(e) {
+			var lineMove = $(this).parent().index()*94;
+			//'+lineMove+'
+			
+            $(this).closest('.nav').find('.line').stop().animate({'left':lineMove + 'px'},200);
+			lineMove = $(this).parent().index();
+        },function(){
+			$(this).closest('.nav').find('.line').stop().animate({'left':'0px'},200);	
+		});
+		
+		/***************我们的案例部分****************/
+		$('.cases_bd ul li').hover(function(e) {
+            $(this).find('span').stop().fadeIn(500);
+        },function(){
+			$(this).find('span').stop().fadeOut(500);	
+		});
+		/***主体部分***/
+		$('.main ul li').hover(function(e) {
+            $(this).css('background','#219FFF').find('h4,p').css('color','#fff');
+			$(this).find('span').css({'background':'#fff','color':'#219FFF'});
+        },function(){
+			$(this).css('background','#FFF').find('h4').css('color','#555');
+			$(this).css('background','#FFF').find('p').css('color','#545454');
+			$(this).find('span').css({'background':'#F2F2F2','color':'#616161'});	
+		});
+		
+		/********底部表单******/
+		$('.form .one').focus(function(e) {
+            if($(this).val('请输入您的姓名')){
+				$(this).val('');
+			}
+        });
+		$('.form .one').blur(function(e) {
+            if($(this).val('')){
+				$(this).val('请输入您的姓名');
+			}
+        });
+		$('.form .two').focus(function(e) {
+            if($(this).val('请输入您的电话')){
+				$(this).val('');
+			}
+        });
+		$('.form .two').blur(function(e) {
+            if($(this).val('')){
+				$(this).val('请输入您的电话');
+			}
+        });
+		$('.form .three').focus(function(e) {
+            if($(this).val('请输入您的公司名称')){
+				$(this).val('');
+			}
+        });
+		$('.form .three').blur(function(e) {
+            if($(this).val('')){
+				$(this).val('请输入您的公司名称');
+			}
+        });
+		$('.form .four').focus(function(e) {
+            if($(this).val('请填写网站需求')){
+				$(this).val('');
+			}
+        });
+		$('.form .four').blur(function(e) {
+            if($(this).val('')){
+				$(this).val('请填写网站需求');
+			}
+        });
+		
+	})
+</script>
+
+
+<body>
+<!--头部开始-->
+<div class="header">
+	<div class="headerIn wrap">
+    	<div class="logo fl">
+        	<h1><a href="#" title="河北极速网络"><img src="img/logo.png" width="108" height="60" />河北极速网络</a></h1>
+        </div>
+        <div class="nav">
+            <ul class="navUl fl">
+                <li><a href="index.html">网站首页</a></li> 
+                <li><a href="javascript:;">关于极速</a></li>
+                <li><a href="javascript:;">网站建设</a></li>
+                <li><a href="javascript:;">APP开发</a></li>
+                <li><a href="javascript:;">微信开发</a></li>
+                <li><a href="javascript:;">案例中心</a></li>
+                <li><a href="list.html">新闻中心</a></li>
+                <li><a href="javascript:;">联系我们</a></li>      
+            </ul>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<!-- banner 开始 -->
+<div class="banner">
+	<h2>新闻中心 NEWS</h2>
+    <p>关注极速，关注互联网！</p>
+</div>
+<!-- banner 结束 -->
+<!-- main 开始 -->
+<div class="main">
+	<ul>
+		<li>
+            <a href="show.html">
+                <img src="img/main_01.jpg" width="312" height="128" /> 
+                <h4>儿童电子绘画本app开发原则有哪些</h4>
+                <p>&nbsp;&nbsp;&nbsp;儿童  app开发  一直是备受关注的app软件开发，因为儿童类app的开发关系到儿童的成长。据相关报道称，儿童电子绘画本app软件可以提高儿童的学习</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_02.jpg" width="312" height="128" /> 
+                <h4>中国成为iPhone最大的消费市场，ios app外...</h4>
+                <p>&nbsp;&nbsp;&nbsp;Ios app外包开发是中国  app开发  行业的一个重要组成部分，如果是在以前app外包开发界的龙头老大是安卓app外包公司的话，可能以后这种局面将</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_03.jpg" width="312" height="128" /> 
+                <h4>专业的app外包开发团队是怎样的</h4>
+                <p>&nbsp;&nbsp;&nbsp;术业有专攻，现在很多企业在开发app的时候，比较中意选择专业的app外包团队制作自己的app软件。App外包制作团队是  app开发  公司的核心组成部</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_04.jpg" width="312" height="128" /> 
+                <h4>极速教你如何分析app开发公司的案例</h4>
+                <p>&nbsp;&nbsp;&nbsp;什么是app案例？App案例就是  app开发  公司帮助用户开发app后的案例分享，一般来说，几乎所有的app开发公司都有制作app软件案例。App案</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_05.jpg" width="312" height="128" /> 
+                <h4>唯有美食不可辜负 从下厨房看菜谱app该如何...</h4>
+                <p>&nbsp;&nbsp;&nbsp;随着人们对吃的关注程度越来越高，很多app应用的开发也在这方面下足了功夫，如菜谱app的出现，给吃货带来了福音。菜谱类app中发展的较为好的有下</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_06.jpg" width="312" height="128" /> 
+                <h4>互联网+商务时代，商务网站建设助企业成长</h4>
+                <p>&nbsp;&nbsp;&nbsp;商务  网站建设  也就是企业建设属于自己的企业型网站，企业的商务网站是为了在网上展示企业的信息、文化、产品的网站。  石家庄app开发  公司-  极</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_07.jpg" width="312" height="128" /> 
+                <h4>汽车修理行业开发app可作为线上推广的工具</h4>
+                <p>&nbsp;&nbsp;&nbsp;汽车修理行业  app开发  也是app开发的一种类型，而传统的汽车修理行业开发一款app可以实现线上和线下资源的利用，也就是说汽车修理企业可以把</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_08.jpg" width="312" height="128" /> 
+                <h4>用户都说好的app制作网站有哪些</h4>
+                <p>&nbsp;&nbsp;&nbsp;在互联网+app时代，app制作网站不仅成为企业开发app软件追捧的对象，也是个人制作app的首选。  App开发  制作网站能够为用户带来什么呢？用户</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_09.jpg" width="312" height="128" /> 
+                <h4>机器测试将成为移动app制作公司未来测试app</h4>
+                <p>&nbsp;&nbsp;&nbsp;对移动app的测试是每个一移动app制作企业对移动app首先要做的事情，但是目前国内的制作移动app公司主要的是测试移动app的方法是人工测试。</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_10.jpg" width="312" height="128" /> 
+                <h4>安卓app开发避免昙花一现 需注重app产品质量</h4>
+                <p>&nbsp;&nbsp;&nbsp;随着安卓  app开发  技术的愈加成熟，越来越多的安卓app软件被开发并被我们使用着，但是能够在我们手机上存活得长久的安卓app却很少，甚至很多被</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_11.jpg" width="312" height="128" /> 
+                <h4>企业品牌网站建设不可不知的六大要素</h4>
+                <p>&nbsp;&nbsp;&nbsp;二十一世纪毫无疑问是互联网经济的时代，企业要涉及互联网领域，第一步便是建立自己的企业品牌网站。那么如何建设一个成功的企业品牌网站呢?</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+		<li>
+            <a href="javascript:;">
+                <img src="img/main_12.jpg" width="312" height="128" /> 
+                <h4>如何做好app定制方案，让你的app开发事半功倍</h4>
+                <p>&nbsp;&nbsp;&nbsp;在这个做什么事都强调个性的时代，  app开发  也讲究个性，定制开发app成了企业开发app的首选。而app定制方案的制定是开发定制类app的关键要素</p>
+                <span>查看详细>></span>
+            </a>
+        </li>
+	</ul>
+</div>
+<!-- main 结束 -->
+<!--定制网站开始-->
+<div class="make">
+    	<h2>定制网站</h2>
+        <p class="f16">您心动了么？您需要网站改版么？请通过下面方式联系我们!</p>
+        <div class="contact">
+            <h3><span></span>全国24小时服务热线：400-008-2627</h3>
+        </div>
+        <div class="main_bottom wrap">
+        	<div class="form fl">
+            	<input type="text" value="请输入您的名字" class="one fl" />
+            	<input type="text" value="请输入您的电话" class="two fr" />
+            	<input type="text" value="请输入您的公司名称" class="three"/>
+            	
+                <textarea name="" id="" cols="30" rows="10" class="four">请填写网站需求</textarea>
+                <button>提交需求</button>
+            </div>
+            <div class="map fr">
+              <h3>河北极速网络科技有限公司</h3>
+              <p>地址：中山东路289号长安广场写字楼1702  1704  1706室</p>
+              <p>电子邮箱：postmaster@ew.net.cn</p>
+              <p>电话：0311-80961666   18832121706</p>
+              <p>网址：http://www.ew.net.cn</p>
+              <p>乘车线路：10路、12路、1路、36路、28路、68路、130路省博物馆站下车</p>
+            </div>
+		</div>
+</div>
+<!--定制网站结束-->
+<!--底部导航开始-->
+<div class="bot_nav">
+	<div class="bot_con wrap">
+    	<dl>
+    		<dt><a href="javascript:;">网站首页</a></dt>
+    		<dd><a href="javascript:;"></a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">关于极速</a></dt>
+    		<dd><a href="javascript:;">公司简介</a></dd>
+            <dd><a href="javascript:;">企业文化</a></dd>
+            <dd><a href="javascript:;">服务项目</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">案例中心</a></dt>
+    		<dd><a href="javascript:;">精品案例</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">新闻中心</a></dt>
+    		<dd><a href="javascript:;">行业新闻</a></dd>
+            <dd><a href="javascript:;">建站新闻</a></dd>
+            <dd><a href="javascript:;">app新闻</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">服务与理念</a></dt>
+    		<dd><a href="javascript:;">服务理念</a></dd>
+    	</dl>
+        <dl>
+    		<dt><a href="javascript:;">联系我们</a></dt>
+    		<dd><a href="javascript:;">联系我们</a></dd>
+    	</dl>
+    </div>
+</div>
+<!--底部导航结束-->
+
+<div class="bot">
+	<div class="copy_t">
+        <p>河北极速网络科技有限公司 版权所有 E-mail:postmaster@ew.net.cn </p>
+        <p>电话:0311-80961666 传真:1 邮编:050000 </p>
+        <p>地址:中山东路289号长安广场写字楼1702  1704  1706室 <a href="http://www.miitbeian.gov.cn/" rel="nofollow">冀ICP备07500484号</a> </p>
+        <p>法律支持：天津优法律师事务所 康顺法律师：02228352158 网站地图</p>
+	</div>
+    <div class="copy_b">本站链接：<a href="http://www.ew.net.cn" target="_blank">河北极速</a><a href="http://www.chinazk.org.cn" target="_blank" title="app开发">app开发</a>
+    </div>
+</div>
+
+</body>
+</html>

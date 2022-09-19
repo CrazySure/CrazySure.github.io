@@ -1,0 +1,10 @@
+
+Stable live link
+
+Include the following code at the top of the <head> of your page: <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+Stable local link
+
+Download Firebug Lite and include the following code at the top of the <head> of your page: <script type="text/javascript" src="/local/path/to/firebug-lite.js"></script>
+Debug channel
+
+<script type="text/javascript" src="/local/path/to/firebug-lite.js"></script>

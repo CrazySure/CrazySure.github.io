@@ -1,0 +1,38 @@
+/* banner 开始 */
+.banner{width:100%; height:275px; background:url(../img/list-banner.jpg) no-repeat center center; text-align:center; padding:90px 0 0 0;}
+.banner h2{color:#1797FF; font-size:32px; padding:100px 0 0 0;}
+.banner p{color:#666; font-size:16px;}
+/* banner 结束 */
+
+/* main 开始 */
+.main{width:100%; background:#EEEEEE; overflow:hidden;}
+.main ul{overflow:hidden; padding:36px 0 0 0; font-family:"宋体"; width:1100px; margin:0 auto;}
+.main ul li{float:left; display:inline; padding:7px; width:314px; height:265px; background:#fff; margin:0 16px 50px 0;}
+.main ul li a{display:block;  width:314px; height:265px;}
+.main ul li a span{display:block; height:34px; line-height:34px; text-align:center; background:#F2F2F2; font-size:16px;}
+.main ul li a h4{line-height:27px; font-size:14px; color:#555; height:27px; overflow:hidden;}
+.main ul li a p{line-height:18px; height:70px;  font-size:12px; color:#545454;}
+
+/* main 结束 */
+/*定制网站开始*/
+.make{width:100%; text-align:center; padding:20px 0 72px 0;}
+.make .contact{width:530px; border:1px solid #0078DB;margin:0 auto; text-align:center; padding:3px;}
+.contact h3{height:80px; line-height:80px; font-size:25px; color:#fff; background-color:#1797FF; }
+.contact h3 span{float:left; display:inline; margin:26px 0 0 35px; width:45px; height:32px; background:url(../img/mainbg.png) no-repeat -455px -160px;}
+.make h2{font-size:32px; color:#1797FF;}
+.make .f16{color: #666; height:60px;}
+.main_bottom{overflow:hidden;}
+.make .form{width:413px; padding:20px 0 0 0; }
+.form .one,.form .two,.form .three{height:30px; font-family:"SimSun"; font-weight:normal; font-size:14px;}
+.form .one,.form .two,.form .three,.form .four{border:1px solid #ABABAB; background:#F7F7F7; color:#1797FF; padding:0 0 0 10px;}
+.form .one,.form .two{width:188px;}
+.form .three{width:401px; margin:12px 0; display:inline;}
+.form .four{width:401px; height:90px; font-family:"SimSun";}
+.form button{width:411px; height:34px; line-height:34px; text-align:center; background:#1797FF; color:#fff; margin:15px 0 0 0;}
+.main_bottom .map{padding:70px 0 0 0; width:410px; text-align:left;}
+.main_bottom .map h3{font-size:18px; height:37px; color:#7D667D;}
+.main_bottom .map p{height:26px; color:#666666; background:url(../img/mainbg.png) no-repeat -490px -202px; padding:0 0 0 10px;}
+  
+  
+ 
+/*定制网站结束*/

@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>冯硕的个人主页</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- <link type="text/css" rel="stylesheet" href="css/swiper-3.3.1.min.css"> -->
+<link type="text/css" rel="stylesheet" href="css/animate.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/preload.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+
+<script type="text/javascript" src="js/ThreeCanvas.js"></script>
+<script type="text/javascript" src="js/Snow.js"></script>
+
+
+<script>
+		
+    	// loading
+	    var img=new Image(); 
+	    img.src="images/loading.gif";
+	    
+	    /*window.onload = function() {
+		    document.body.className = 'loaded';
+	    }*/
+		
+		window.onload=function(){
+			fakeProgress(0, sz)	;
+			init();
+			$('.loadingCls').addClass('show');
+		    $('.layer0-0').css({'bottom':0,'height':325/750*page_w});
+		    $('.layer0-1').css({'top':160/750*page_w,'height':497/750*page_w});
+	        $('.layer0-2').css({'top':160/750*page_w,'height':497/750*page_w});
+	        $('.layer0-5').css({'top':160/750*page_w,'height':500/750*page_w});
+	        $('.layer0-6').css({'top':160/750*page_w,'height':500/750*page_w});
+			
+		}
+</script>
+
+
+
+
+<script>
+var page_w = $(window).width();
+var page_h = $(window).height();
+
+
+
+function setSB(v, el) {
+var ie5 = (document.all && document.getElementsByTagName);
+if (ie5 || document.readyState == "complete")     {
+  valueEl = el.children[1];
+  el.innerText = v + "%";
+	var myVideo = document.getElementById("video");
+	var myMusic = document.getElementById("music");
+ 
+ 	//myVideo.play();
+  
+
+}
+}
+function fakeProgress(v, el) {
+if (v > 50)
+{ 
+	var myVideo = document.getElementById("video");
+	var myMusic = document.getElementById("music");
+	myVideo.play();
+	$(".loadingCls").hide();
+	$(".swiper-parent").show();
+	
+	
+	
+	
+	
+}
+else     {
+  setSB(v, el);
+  window.setTimeout("fakeProgress(" + (++v) + ", document.all['" + el.id + "'])", 60);
+  
+}
+} 
+</script>
+
+
+</head>
+
+<!-- <body oncontextmenu="return false"  onLoad=" fakeProgress(0, sz)"> --> 
+<body oncontextmenu="return false" > 
+	<!-- 加载 -->
+	<div class="loadingCls" >
+	    <div class="loading">
+	    	<div class="loadingIn " >
+            	<div class="page layer0-1 " ><img src="images/0-1.png"/></div>
+            	<div class="page layer0-2 " ><img src="images/0-2.png"/></div>
+            	<div class="page layer0-0 " ><img src="images/0-0.png"/></div>
+            	<div class="page layer0-6 " ><img src="images/0-6.png"/></div>
+                <div class="page layer0-5 " ><img src="images/0-5.png"/></div>
+                <div id="iframe-wrap">
+    <iframe id="iframe" src="http://www.17sucai.com/preview/537573/2016-08-18/star1/index.html" frameborder="0"  width="100%" height="100%" ></iframe>
+</div>
+      		</div>
+	    </div>
+	    <div class="loadingText" style="color:#8d99b5; display:none;">
+	        <p id="sz">0%</p>
+	    </div>
+	</div>
+    
+    <div class=" swiper-container swiper-parent" style=" display:none;">
+    	<div class="swiper-wrapper">
+        	<!-- 第一屏 -->
+            <div class=" layer1 swiper-slide">
+                <div class="page layer1-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><img src="images/1-1.png"/></div>
+                <div class="page layer1-2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="1s"><img src="images/1-2.png"/></div>
+                <div class="page layer1-3 ani" swiper-animate-effect="flipInY" swiper-animate-duration="1s" swiper-animate-delay="1s"><img src="images/1-3.png"/></div>
+                <div class="page layer1-4 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">个人</div>
+                <div class="page layer1-5 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">主页</div>
+                <div class="page layer1-6 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">RES</div>
+                <div class="page layer1-7 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">UME</div>
+                <div class="page layer1-8 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.1s"><img src="images/1-8.png"/></div>
+                <div class="page layer1-9 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0s" swiper-animate-delay="2s"><img src="images/1-9.png"/></div>
+                <div class="page layer1-10 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0s" swiper-animate-delay="3s"><img src="images/1-10.png"/></div>
+                <!-- 底部 -->
+                <div class="arrow">
+                     <img src="images/arrow.png"/>
+                </div>
+            </div>
+            
+            <!-- 第三屏 -->
+            <div class=" layer3 swiper-slide">
+                <div class="page layer3-1">基本信息</div>
+                <div class="page layer3-2"></div>
+                <div class="page layer3-3"></div>
+                <div class="page layer3-4"></div>
+                <div class="page layer3-5"></div>
+                <div class="page layer3-6"></div>
+                <div class="page layer3-7"></div>
+                <div class="page layer3-8"></div>
+                <div class="page layer3-9"></div>
+                <div class="page layer3-10"></div>
+                <div class="page layer3-11"></div>
+                <div class="page layer3-12"></div>
+                
+                
+                <div class="page layer3-13">姓名：冯硕</div>
+                <div class="page layer3-14">性别：男</div>
+                <div class="page layer3-15">年龄：27</div>
+                <div class="page layer3-16">职位：WEB前端工程师</div>
+                <div class="page layer3-17">工作经验：四年</div>
+                <div class="page layer3-18">联系电话：17718372770</div>
+                <div class="page layer3-19">电子邮箱：326039018@qq.com</div>
+                
+                <!-- 底部 -->
+                <div class="arrow">
+                     <img src="images/arrow.png"/>
+                </div>
+            </div>
+            <!-- 第六屏 -->
+            <div class=" layer6 swiper-slide">
+                <div class="page layer6-1">软件技能</div>
+                <div class="page layer6-2"></div>
+                <div class="page layer6-3"><img src="images/6-3.png"></div>
+                <div class="page layer6-4">Adobe Photoshop</div>
+                <div class="page layer6-5"><img src="images/6-5.png"></div>
+                <div class="page layer6-6">Sublime</div>
+                <div class="page layer6-7"><img src="images/6-7.png"></div>
+                <div class="page layer6-8">Adobe Dreamweaver</div>
+                <div class="page layer6-9"></div>
+                <div class="page layer6-10"></div>
+                <div class="page layer6-11"></div>
+                <div class="page layer6-12"></div>
+                <div class="page layer6-13">80%</div>
+                <div class="page layer6-14"></div>
+                <div class="page layer6-15"></div>
+                <div class="page layer6-16"></div>
+                <div class="page layer6-23"></div>
+                <div class="page layer6-17">80%</div>
+                <div class="page layer6-18"></div>
+                <div class="page layer6-19"></div>
+                <div class="page layer6-20"></div>
+                <div class="page layer6-22"></div>
+                <div class="page layer6-21">80%</div>
+                
+                <!-- 底部 -->
+                <div class="arrow">
+                     <img src="images/arrow.png"/>
+                </div>
+            </div>
+            <!-- 第四屏 -->
+            <div class=" layer4 swiper-slide">
+                <div class="page layer4-0 ani" swiper-animate-effect="rollOut" swiper-animate-duration="1s" swiper-animate-delay="0.5s">职业技能</div>
+                <div class="page layer4-1 ">职业技能</div>
+                <div class="page layer4-2"></div>
+                <div class="page layer4-3"></div>
+                <div class="page layer4-4"><img src="images/4-4.png"></div>
+                <div class="page layer4-5"><img src="images/4-5.png"></div>
+                <div class="page layer4-6">         掌握HTML/HTML5、CSS/CSS3、JavaScript等前端开发技术，掌握DIV+CSS网页布局，可以根据原型直接开发前台界面，并且适合多终端的响应式布局； 
+	  熟练掌握W3C标准及各种浏览器兼容（包括IE、Chrome、Firefox、360浏览器），对于结构、样式、行为相分离和web语义化有深刻的理解，熟悉模块化布局，并掌握主流浏览器的适配问题，了解常用性能优化方法； 
+	  熟练JQuery、Bootstrap、Zepto、Vue等框架能够实现用户体验好的WEB交互效果，并熟练使用jQuery-UI、swiper、iscroll 等插件；                             
+	  掌握HTML5+CSS3， 可以开发手机端、pad端等移动端界面；  
+	  熟练掌握JavaScript及DOM、BOM事件Ajax等核心技术；
+</div>
+                <div class="page layer4-8"></div>
+                <!-- 底部 -->
+                <div class="arrow">
+                     <img src="images/arrow.png"/>
+                </div>
+            </div>
+            <!-- 第五屏 -->
+            <div class=" layer5 swiper-slide" >
+                <div class="page layer5-1">工作经历</div>
+                <div class="page layer5-2"></div>
+                <div class="page layer5-3"><img src="images/5-3.png"></div>
+                <div class="page layer5-4"></div>
+                <div class="page layer5-5"><img src="images/5-3.png"></div>
+                <div class="page layer5-6"></div>
+                <div class="page layer5-7">2018.8-2019.6<br/><br/>微思智尚科技有限公司</div>
+                <div class="page layer5-8">2015.8-2018.8<br/><br/>微岚星空科技有限公司</div>
+                <!-- 底部 -->
+                <div class="arrow">
+                     <img src="images/arrow.png"/>
+                </div>
+            </div>
+            <!-- 第九屏 -->
+            <div class=" layer9 swiper-slide" id="layer9">
+                <div class="page layer9-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s"><img src="images/9-1.png"/></div>
+                <div class="page layer9-4 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.6s" swiper-animate-delay="0.5s"><img src="images/9-4.png"/></div>
+                
+                <div class="page layer9-2"><img src="images/9-2.png"/></div>
+                <div class="page layer9-3"><a href="tel:17718372770"><img src="images/9-3.png"/></a></div>
+            </div>
+            
+            <!-- 第七屏 -->
+            <!-- <div class=" layer7 swiper-slide"> -->
+                <!-- <div class="page layer7-1">职位技能</div>
+                <div class="page layer7-2"><img src="images/7-3.png"></div>
+                <div class="page layer7-3"><img src="images/7-4.png"></div>
+                <div class="page layer7-4"><img src="images/7-5.png"></div>
+                <div class="page layer7-5"><img src="images/7-6.png"></div>
+                <div class="page layer7-6">1.掌握W3C标准及各种浏览器兼容（包括IE、Chrome、Firefox、360浏览器），对于结构、样式、行为相分离和web语义化有深刻的理解，并且对面向对象，模块化开发有一定理解；端的响应式布局；2.熟练使用Dreamweaver、Sublime、Photoshop 、Illustrator、Fireworks、Flash等图形及网页设计软件。</div>
+                <div class="page layer7-7">3.掌握HTML/CSS/DOM<br/>/Ajax，掌握DIV+CSS网页布局，可以根据原型直接开发前台界面，并且是适合多终</div>
+                <div class="page layer7-8">4.掌握HTML5/CSS3，并有实际项目开发经验；5.了解JSP服务器端开发语言，了解JAVA后台开发；</div> -->
+                <!-- 底部 -->
+                <!-- <div class="arrow">
+                     <img src="images/arrow.png"/>
+                </div> -->
+            <!-- </div> -->
+            
+            <!-- 第八屏 -->
+            <!-- <div class=" layer8 swiper-slide">
+                <div class="page layer8-1">作品展示</div>
+                <div class="page layer8-2"><img src="images/8-2.jpg"></div>
+                <div class="page layer8-3"><img src="images/8-3.jpg"></div>
+                <div class="page layer8-4"><img src="images/8-4.jpg"></div>
+                <div class="page layer8-5"><img src="images/8-1.jpg"></div>
+                <div class="page layer8-6"><img src="images/8-5.jpg"></div>
+                <div class="page layer8-7"><img src="images/8-6.jpg"></div>
+                底部
+                <div class="arrow">
+                     <img src="images/arrow.png"/>
+                </div>
+            </div> -->
+            
+            
+            
+        </div>
+
+        
+        
+        
+        
+        
+        
+        <!-- 音乐 -->
+        <div class="music music_run" id="music">
+            <img src="images/music.png" style="width: 100%" class="music_img">
+            <audio id="video" autoplay loop style="display:none;">
+                <source src="music/music.mp3" id="video_url_mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    
+    
+   
+<script type="text/javascript">
+	var page_w = $(window).width();
+	var page_h = $(window).height();
+	<!-- 流星雨 -->
+	$("#iframe").css({'height':page_h});
+	$("#stars").css({'height':page_h});
+	<!-- 流星雨 -->
+	
+	
+	$('.swiper-container,.swiper-wrapper,.swiper-slide,.swiper-slide-visible').css({'width':page_w,'height':page_h});
+	
+	var mySwiper = new Swiper ('.swiper-container', {
+	   mode: 'vertical', 
+	  //direction: 'vertical',
+	
+	  loop: false, 
+	  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+		swiperAnimateCache(swiper); //隐藏动画元素 
+		swiperAnimate(swiper); //初始化完成开始动画
+	  }, 
+	  onSlideChangeEnd: function(swiper){ 
+		swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+	  } 
+	})    
+  
+  
+	
+	
+	
+
+</script>
+<!-- <script type="text/javascript" src="js/weixin.js" ></script> -->
+</body>
+</html>
+
+<!-- 雪景 -->
+<script type="text/javascript">
+
+
+var SCREEN_WIDTH = window.innerWidth;
+var SCREEN_HEIGHT = window.innerHeight;
+
+var container;
+
+var particle;
+
+var camera;
+var scene;
+var renderer;
+
+var mouseX = 0;
+var mouseY = 0;
+
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
+
+var particles = []; 
+var particleImage = new Image();//THREE.ImageUtils.loadTexture( "img/ParticleSmoke.png" );
+particleImage.src = 'img/ParticleSmoke.png'; 
+
+
+
+
+function init() {
+
+	container = document.createElement('div');
+	//document.body.appendChild(container);
+	document.getElementById("layer9").appendChild(container);
+	container.style.position = "absolute";
+	<!-- 控制雪景的位置 -->
+	container.style.left = 0;
+	container.style.top = 0+'px';
+
+	camera = new THREE.PerspectiveCamera( 75, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 10000 );
+	camera.position.z = 1000;
+
+	scene = new THREE.Scene();
+	scene.add(camera);
+		
+	renderer = new THREE.CanvasRenderer();
+	renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+	var material = new THREE.ParticleBasicMaterial( { map: new THREE.Texture(particleImage) } );
+		
+	for (var i = 0; i < 500; i++) {
+
+		particle = new Particle3D( material);
+		particle.position.x = Math.random() * 2000 - 1000;
+		particle.position.y = Math.random() * 2000 - 1000;
+		particle.position.z = Math.random() * 2000 - 1000;
+		particle.scale.x = particle.scale.y =  1;
+		scene.add( particle );
+		
+		particles.push(particle); 
+	}
+
+	container.appendChild( renderer.domElement );
+
+
+	document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+	document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+	document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+	
+	setInterval( loop, 1000 / 60 );
+	
+}
+
+
+function onDocumentMouseMove( event ) {
+
+	mouseX = event.clientX - windowHalfX;
+	mouseY = event.clientY - windowHalfY;
+}
+
+function onDocumentTouchStart( event ) {
+
+	if ( event.touches.length == 1 ) {
+
+		event.preventDefault();
+
+		mouseX = event.touches[ 0 ].pageX - windowHalfX;
+		mouseY = event.touches[ 0 ].pageY - windowHalfY;
+	}
+}
+
+function onDocumentTouchMove( event ) {
+
+	if ( event.touches.length == 1 ) {
+
+		event.preventDefault();
+
+		mouseX = event.touches[ 0 ].pageX - windowHalfX;
+		mouseY = event.touches[ 0 ].pageY - windowHalfY;
+	}
+}
+
+//
+
+function loop() {
+
+for(var i = 0; i<particles.length; i++)
+	{
+
+		var particle = particles[i]; 
+		particle.updatePhysics(); 
+
+		with(particle.position)
+		{
+			if(y<-1000) y+=2000; 
+			if(x>1000) x-=2000; 
+			else if(x<-1000) x+=2000; 
+			if(z>1000) z-=2000; 
+			else if(z<-1000) z+=2000; 
+		}				
+	}
+
+	camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+	camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
+	camera.lookAt(scene.position); 
+
+	renderer.render( scene, camera );
+
+	
+}
+
+</script>
